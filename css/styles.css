@@ -5,6 +5,8 @@
 }
 
 
+
+
 .navbar {
     position: relative;
     background-color: white;
@@ -70,6 +72,8 @@
 
 .container {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
     height: 125vh;
 }
 
@@ -160,9 +164,9 @@
 
 .products {
     display: flex;
+    flex-wrap: wrap;
     position: absolute;
     top: 75vh;
-    padding: 20px;
     justify-content: space-evenly;
     width: 100%;
     height: 50vh;
@@ -173,7 +177,7 @@
 .product-box {
     position: relative;
     justify-content: center;
-    width: 60vh;
+    width: 32%;
     height: 40vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -181,8 +185,8 @@
 }
 
 .product-box img {
-    width: 59.8vh;
-    height: 39.8vh;
+    width: 100%;
+    height: 40vh;
     border-radius: 10px;
     object-fit: cover;
     transition: filter 0.3s ease-in-out;
@@ -220,7 +224,10 @@
 }
 
 
-.footer{position: relative;
+.footer{
+    position: absolute;
+    top: 30vh;
+    width: 100%;
     height: 30vh;
     background-image: linear-gradient(rgb(243, 242, 242),rgb(237, 255, 237));
 }
@@ -235,8 +242,6 @@
 
 
 .footer h1{
-    margin-top: 10vh;
-    margin-right: 62px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     text-align: center;
@@ -244,7 +249,6 @@
 
 
 .footer p{
-    margin-right: 62px;
     font-family: Roboto;
     font-weight: 400;
     text-align: center;
@@ -257,10 +261,16 @@
 }
 
 
+.recycle{
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%;
+    justify-content: center;
+    align-content: center;
+}
+
+
 .recycle img{
-    position: absolute;
-    top: 5vh;
-    left: 29vh;
     background-color: rgb(204, 255, 204);
     border-radius: 50%;
     padding: 15px;
@@ -271,9 +281,6 @@
 
 
 .service img{
-    position: absolute;
-    top: 5vh;
-    left: 90vh;
     background-color: rgb(204, 255, 204);
     border-radius: 50%;
     padding: 15px;
@@ -283,12 +290,62 @@
 
 
 .qulity img{
-    position: absolute;
-    top: 5vh;
-    right: 34vh;
     background-color: rgb(204, 255, 204);
     border-radius: 50%;
     padding: 15px;
     width: 80px;
     height: 80px;
 }
+
+
+
+.section{
+    height: 50vh;
+}
+
+
+
+
+/* Adding responciveness */
+
+@media screen and (max-width: 1800px) {
+    body{
+        background-color: green;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 75vh;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 20px;
+        height: 50vh;
+        background-color: rgb(243, 242, 242);
+    }
+    
+    
+    .product-box {
+        position: relative;
+        justify-content: center;
+        width: 44`vh;
+        height: 40vh;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+    }
+    
+    .product-box img {
+        width: 100%;
+        height: 40vh;
+        border-radius: 10px;
+        object-fit: cover;
+        transition: filter 0.3s ease-in-out;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        filter: brightness(70%);
+    }
+}
+
+
