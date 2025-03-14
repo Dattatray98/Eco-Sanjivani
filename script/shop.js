@@ -41,3 +41,8 @@ function changeBackground() {
 
 // Run every 4 seconds
 setInterval(changeBackground, 2500);
+
+
+document.querySelector(".user").addEventListener("click",()=>{
+    window.location.href = "/html/login.html"
+})
