@@ -1,152 +1,81 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-image: linear-gradient(rgb(203, 245, 253), white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgb(203, 245, 253), white);
 }
 
-
 .container {
-    position: relative;
-    top: 15vh;
-    left: 38vh;
-    width: 120vh;
-    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    max-width: 400px;
+    padding: 20px;
     border-radius: 10px;
     border: 1.5px solid rgb(161, 160, 160);
     backdrop-filter: blur(16px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.6);
 }
 
-
-.email {
-    position: absolute;
-    top: 20vh;
-    left: 33vh;
-    padding: 2px;
-    width: 400px;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: transparent;
-    height: 40px;
-    border: none;
-    outline: none;
-}
-
-
-.password {
-    position: absolute;
-    top: 30vh;
-    left: 33vh;
-    outline: none;
-    padding: 2px;
-    width: 400px;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: transparent;
-    height: 40px;
-    border: none;
-    outline: none;
-}
-
-
-.login {
-    position: absolute;
-    top: 40vh;
-    left: 33vh;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    width: 90px;
-    border-radius: 10px;
-    font-weight: bold;
-    background-color: transparent;
-    padding: 8px;
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
     border: 1px solid gray;
-    outline: none;
-    backdrop-filter: blur(16px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-.remember-me {
-    position: absolute;
-    top: 41.5vh;
-    right: 70vh;
-    border: 1px solid black;
-    outline: none;
-    cursor: pointer;
-    backdrop-filter: blur(16px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-.container h4 {
-    position: absolute;
-    top: 41.2vh;
+    border-radius: 5px;
     font-size: 16px;
-    font-weight: 500;
-    right: 56vh;
-    font-family: Arial, Helvetica, sans-serif
 }
 
+button {
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    backdrop-filter: blur(16px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+.remember-me-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
 
-.container a {
-    position: absolute;
-    top: 41.3vh;
-    left: 68vh;
-    font-size: 15px;
+.forgot-password {
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    align-self: flex-end;
 }
 
-
-.toggle-password{
-    position: absolute;
-    top: 33vh;
-    left: 85vh;
-    border: none;
-    cursor: pointer;
+.register-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-
-.container p1{
-    position: absolute;
-    top: 55vh;
-    left: 45vh;
-    font-size: 16px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
 }
 
-
-.register-1{
-    position: absolute;
-    top: 54vh;
-    left:68vh;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    width: 90px;
-    border-radius: 10px;
-    font-weight: bold;
-    background-color: transparent;
-    padding: 8px;
-    border: 1px solid gray;
-    outline: none;
-    backdrop-filter: blur(16px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+    input, button {
+        font-size: 14px;
+    }
 }

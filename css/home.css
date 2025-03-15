@@ -21,7 +21,7 @@
 }
 
 
-.search-bar{
+.search-bar {
     position: absolute;
     top: 10px;
     left: 15%;
@@ -33,7 +33,7 @@
 }
 
 
-.search-bar input{
+.search-bar input {
     position: fixed;
     height: 40px;
     padding: 10px;
@@ -49,7 +49,7 @@
 }
 
 
-.search-bar img{
+.search-bar img {
     position: absolute;
     right: 0%;
     width: 40px;
@@ -59,7 +59,7 @@
 }
 
 
-.search-bar img:hover{
+.search-bar img:hover {
     padding: 6px;
 }
 
@@ -115,7 +115,7 @@
     overflow: hidden;
 }
 
-.Welcome-note{
+.Welcome-note {
     position: absolute;
     top: 130px;
     left: 220px;
@@ -123,15 +123,15 @@
 }
 
 
-.Welcome-note h1{
+.Welcome-note h1 {
     font-size: 40px;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    font-family:"Atomic Age", system-ui;
+    font-family: "Atomic Age", system-ui;
 }
 
 
-.Welcome-note p{
+.Welcome-note p {
     margin-top: -6px;
     margin-left: 20px;
     font-size: 18px;
@@ -170,6 +170,7 @@
     right: 10px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -178,17 +179,17 @@
     width: 24%;
     background-image: linear-gradient(white, rgb(221, 252, 221));
     height: 50vh;
-    border-radius:12px;
+    border-radius: 12px;
     transition: transform 0.4s;
 }
 
 
-.product-box:hover{
+.product-box:hover {
     transform: scale(1.03);
 }
 
 
-.product-box img{
+.product-box img {
     width: 100%;
     height: 38vh;
     border-top-right-radius: 10px;
@@ -196,14 +197,14 @@
 }
 
 
-.product-box p{
+.product-box p {
     padding: 5px 20px;
     font-size: 16px;
     font-family: Roboto;
 }
 
 
-.product-box h3{
+.product-box h3 {
     font-family: roboto;
     font-size: 17px;
     font-weight: 350;
@@ -211,10 +212,9 @@
 }
 
 
-.product-container-2{
+.product-container-2 {
     position: relative;
     top: 0;
-    border: 2px solid red;
     height: 100vh;
     padding: 5px;
     width: 100%;
@@ -222,12 +222,12 @@
 }
 
 
-.kitchen-items{
+.kitchen-items {
     display: flex;
     margin-top: 30px;
     align-items: center;
     justify-content: space-evenly;
-     border: 1px solid rgb(150, 152, 150);
+    border: 1px solid rgb(150, 152, 150);
     height: 35vh;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -235,7 +235,7 @@
 }
 
 
-.kitchen-items h1{
+.kitchen-items h1 {
     position: absolute;
     top: 40px;
     left: 10px;
@@ -245,7 +245,7 @@
 }
 
 
-.kitchen-items a{
+.kitchen-items a {
     position: absolute;
     top: 47px;
     left: 71vh;
@@ -257,20 +257,20 @@
 }
 
 
-.kitchen-items img{
+.kitchen-items img {
     height: 25vh;
     width: 25vh;
     transition: transform 0.4s;
 }
 
 
-.kitchen-items img:hover{
+.kitchen-items img:hover {
     transform: scale(1.1);
 }
 
 
-.kitchen-items-2{
-    margin-top:30px;
+.kitchen-items-2 {
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -282,7 +282,7 @@
 }
 
 
-.kitchen-items-2 h1{
+.kitchen-items-2 h1 {
     position: absolute;
     left: 10px;
     margin-bottom: 30vh;
@@ -292,7 +292,7 @@
 }
 
 
-.kitchen-items-2 a{
+.kitchen-items-2 a {
     position: absolute;
     right: 84vh;
     margin-bottom: 29.5vh;
@@ -301,4 +301,330 @@
     font-size: 17px;
     font-weight: 500;
     font-family: Roboto;
+}
+
+
+
+
+@media screen and (max-width: 1220px) {
+    .navbar {
+        position: relative;
+        height: 70px;
+        width: 100%;
+        background-image: linear-gradient(white, rgb(211, 242, 211));
+    }
+
+
+    .navbar .logo {
+        position: absolute;
+        top: 6px;
+        left: 1px;
+        height: 35px;
+        width: 85px;
+        cursor: pointer;
+    }
+
+
+    .search-bar {
+        position: absolute;
+        top: 15px;
+        left: 21.5%;
+        border: 1px solid black;
+        border-radius: 10px;
+        height: 28px;
+        width: 220px;
+        cursor: pointer;
+    }
+
+
+    .search-bar input {
+        position: fixed;
+        height: 28px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: transparent;
+        width: 200px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        transition: 0.3s;
+    }
+
+
+    .search-bar img {
+        position: absolute;
+        top: -1.5px;
+        right: -0.2%;
+        width: 30px;
+        height: 30px;
+        padding: 8px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+    .search-bar img:hover {
+        padding: 6px;
+    }
+
+
+    .navbar .user {
+        position: absolute;
+        top: 22px;
+        right: 10px;
+        width: 17px;
+        cursor: pointer;
+    }
+    
+    
+    .navbar .cart {
+        position: absolute;
+        top: 22px;
+        right: 38px;
+        width: 17px;
+        cursor: pointer;
+    }
+    
+    
+    .navbar .like {
+        position: absolute;
+        top: 22px;
+        right: 67px;
+        width: 17px;
+        cursor: pointer;
+    }
+    
+
+    .navbar .about {
+        position: absolute;
+        display: flex;
+        top: 40px;
+        left: 20%;
+    }
+    
+    
+    .navbar .about a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        margin: 10px;
+        color: black;
+        text-decoration: none;
+    }
+
+
+    .container {
+        position: relative;
+        height: 73vh;
+        background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1));
+        overflow: hidden;
+    }
+
+    .Welcome-note {
+        position: absolute;
+        top: 50px;
+        left: 17px;
+        cursor: default;
+    }
+
+
+    .Welcome-note h1 {
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        font-family: "Atomic Age", system-ui;
+    }
+
+
+    .Welcome-note p {
+        margin-top: -6px;
+        margin-left: 2px;
+        font-size: 12.5px;
+        font-weight: 500;
+        color: rgb(17, 16, 16);
+        font-family: "Montserrat", sans-serif;
+    }
+
+
+
+    /* Background container */
+    .background {
+        position: absolute;
+        top: 0;
+        height: 37vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* Default background */
+    .background-slide {
+        position: absolute;
+        width: 100%;
+        height: 37vh;
+        background-size: cover;
+        filter: brightness(70%);
+        background-position: center;
+        transform: translateX(100%);
+        /* Start outside */
+        transition: transform 1s ease-in-out;
+    }
+
+
+    /* Products section */
+    .products {
+        border: 2px solid red;
+        position: absolute;
+        top: 0;
+        padding-top: 20vh;
+        right: 10px;
+        height: 74vh;
+        width: 100%;
+        display: flex;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(63, 71, 1));
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .product-box {
+        border: 2px solid green;
+        width: 22vh;
+        background-image: linear-gradient(white, rgb(200, 249, 200));
+        height: 25vh;
+        border-radius: 12px;
+        transition: transform 0.4s;
+    }
+
+
+    .product-box:hover {
+        transform: scale(1.03);
+    }
+
+
+    .product-box img {
+        width: 100%;
+        height: 70%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+
+    .product-box p {
+        padding: 1px 13px;
+        font-size: 10px;
+        font-family: Roboto;
+    }
+
+
+    .product-box h3 {
+        font-family: roboto;
+        font-size: 10px;
+        font-weight: 500;
+        padding: 2px 13px;
+    }
+
+
+    .product-container-2 {
+        border: 2px solid blue;
+        position: relative;
+        top: 0;
+        height: 100vh;
+        padding: 5px;
+        width: 100%;
+        background-image: linear-gradient(rgb(63, 71, 1), rgb(239, 237, 237));
+    }
+
+
+
+    .kitchen-items {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        align-items: center;
+        background-image: linear-gradient(rgb(218, 252, 218), rgb(231, 253, 229));
+        justify-content: space-evenly;
+        border: 1px solid rgb(150, 152, 150);
+        height: 29vh;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    .kitchen-items h1 {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        font-weight: 450;
+        font-size: 14.5px;
+        font-family: Roboto;
+    }
+
+
+    .kitchen-items a {
+        position: absolute;
+        top: 23px;
+        left: 41.5vh;
+        text-decoration: none;
+        color: rgb(45, 140, 250);
+        font-size: 12px;
+        font-weight: 500;
+        font-family: Roboto;
+    }
+
+
+    .kitchen-items img {
+        margin-top: 19px;
+        height: 12vh;
+        width: 12vh;
+        transition: transform 0.4s;
+    }
+
+
+    .kitchen-items-2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        align-items: center;
+        background-image: linear-gradient(rgb(218, 252, 218), rgb(231, 253, 229));
+        justify-content: space-evenly;
+        border: 1px solid rgb(150, 152, 150);
+        height: 35vh;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    .kitchen-items-2 h1 {
+        position: absolute;
+        left: 10px;
+        padding: 10px;
+        margin-bottom: 30vh;
+        font-weight: 450;
+        font-size: 14.5px;
+        font-family: Roboto;
+    }
+
+
+    .kitchen-items-2 a {
+        position: absolute;
+        top: 36.7vh;
+        left: 37%;
+        text-decoration: none;
+        color: rgb(45, 140, 250);
+        font-size: 12px;
+        font-weight: 500;
+        font-family: Roboto;
+        width: 44px;
+    }
+
+
+    .kitchen-items-2 img {
+        margin-top: 19px;
+        height: 15vh;
+        width: 15vh;
+        transition: transform 0.4s;
+    }
 }
