@@ -175,7 +175,6 @@
 }
 
 .product-box {
-    border: 2px solid green;
     width: 24%;
     background-image: linear-gradient(white, rgb(221, 252, 221));
     height: 50vh;
@@ -474,7 +473,6 @@
 
     /* Products section */
     .products {
-        border: 2px solid red;
         position: absolute;
         top: 0;
         padding-top: 20vh;
@@ -488,7 +486,6 @@
     }
 
     .product-box {
-        border: 2px solid green;
         width: 22vh;
         background-image: linear-gradient(white, rgb(200, 249, 200));
         height: 25vh;
@@ -526,7 +523,6 @@
 
 
     .product-container-2 {
-        border: 2px solid blue;
         position: relative;
         top: 0;
         height: 100vh;
