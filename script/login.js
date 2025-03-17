@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const rememberMe = document.querySelector(".remember-me");
 
     // Show/Hide Password
-    document.querySelector(".toggle-password").addEventListener("click", function () {
+    document.querySelector(".toggle-password").addEventListener("click",()=>{
         passwordInput.type = passwordInput.type === "password" ? "text" : "password";
         this.textContent = passwordInput.type === "password" ? "👁️" : "🙈";
     });

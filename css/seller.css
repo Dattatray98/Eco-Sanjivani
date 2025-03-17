@@ -59,10 +59,10 @@
 /* Dropdown Menu */
 .dropdown-menu {
     position: absolute;
-    top: 20px;
-    right: 10px; /* Align to right */
+    top: 45px;
+    right: 16px; /* Align to right */
     background: white;
-    opacity: 0; /* Hide initially */
+    opacity: 0;
     visibility: hidden;
     list-style: none;
     width: 180px;
@@ -74,12 +74,6 @@
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Show dropdown when JS adds "show" class */
-.dropdown-menu.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
 
 /* Dropdown links */
 .dropdown-menu li a {
