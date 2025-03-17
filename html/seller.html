@@ -9,34 +9,27 @@
     <title>Eco Sanjivani</title>
 </head>
 <body>
-    <header class="seller-navbar">
-        <div class="logo"><img src="/imgs/eco-sanjivani-logo.png" alt=""></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Dashboard</a></li>
-                <li class="dropdown">
-                    <a href="#" id="productsDropdownBtn">My Products</a>
-                    <ul class="dropdown-menu" id="productsDropdownMenu">
-                        <li><a href="#">Add New Product</a></li>
-                        <li><a href="#">Manage Products</a></li>
-                        <li><a href="#">Product Analytics</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Orders</a></li>
-
-            </ul>
-        </nav>
-        <div class="profile">
-            <a href="#" id="dropdownBtn"><img src="/imgs/user.png" alt="Profile" class="profile-img"></a>
-            <ul class="dropdown-menu" id="dropdownMenu">
-                <li><a href="#">My Profile</a></li>
-                <li><a href="#">My Store</a></li>
-                <li><a href="#">Logout</a></li>
-            </ul>
+    <div class="navbar">
+       <div class="logo">
+        <img src="/imgs/eco-sanjivani-logo.png" alt="">
+       </div>
+       <div class="profile">
+        <img src="/imgs/user.png" alt="">
+        <ul>
             
+        </ul>
+       </div>
+       <div class="nav-links">
+        <a href="#">Dashboard</a>
+        <a href="#">My Orders</a>
+       </div>
+    </div>
+    <main class="container">
+        <div class="product-details">
+
         </div>
-    </header>
-    
+        <div class="selles-analisis"></div>
+    </main>
     <script src="/script/seller.js"></script>
     <script src="/script/login.js"></script>
 </body>
