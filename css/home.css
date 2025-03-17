@@ -293,7 +293,7 @@
 
 .kitchen-items-2 a {
     position: absolute;
-    right: 84vh;
+    right: 110vh;
     margin-bottom: 29.5vh;
     text-decoration: none;
     color: rgb(45, 140, 250);
@@ -561,7 +561,7 @@
     .kitchen-items a {
         position: absolute;
         top: 23px;
-        left: 41.5vh;
+        left: 40.7vh;
         text-decoration: none;
         color: rgb(45, 140, 250);
         font-size: 12px;
@@ -607,7 +607,7 @@
     .kitchen-items-2 a {
         position: absolute;
         top: 36.7vh;
-        left: 37%;
+        left: 5%;
         text-decoration: none;
         color: rgb(45, 140, 250);
         font-size: 12px;
