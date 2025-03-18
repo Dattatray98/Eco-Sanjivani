@@ -50,3 +50,10 @@ document.querySelector(".register-1").addEventListener("click",()=>{
     window.location.href = "/html/register.html"
 })
 
+
+
+function redirectpg(){
+    document.querySelector(".dash").addEventListener("click",()=>{
+        window.location.href = "html\seller.html"
+    })
+}
