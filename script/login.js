@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 sessionStorage.setItem("loggedInUser", email);
             }
 
-            window.location.href = "/dashboard.html";
+            window.location.href = "/home.html";
         } else {
             alert("Invalid email or password! Please register if you don't have an account.");
         }
@@ -41,13 +41,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Auto redirect if logged in
     if (localStorage.getItem("loggedInUser") || sessionStorage.getItem("loggedInUser")) {
-        window.location.href = "/html/dashboard.html";
+        window.location.href = "/html/home.html";
     }
 });
 
 
 document.querySelector(".register-1").addEventListener("click",()=>{
     window.location.href = "/html/register.html"
+})
+
+
+document.querySelector(".dash").addEventListener("click", ()=>{
+    window.location.href = "/html/index.html"
 })
 
 
